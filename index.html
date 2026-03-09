@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Law/Security Job Application Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Law / Security Job Application</h2>
+    <p>Please complete all required fields accurately.</p>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <!-- Personal Details -->
+        <label>Full Name *</label>
+        <input type="text" name="fullname" required>
+
+        <label>ID / Passport Number *</label>
+        <input type="text" name="id_number" required>
+
+        <label>Email Address *</label>
+        <input type="email" name="email" required>
+
+        <label>Contact Number *</label>
+        <input type="tel" name="phone" required>
+
+        <!-- Job Details -->
+        <label>Position Applied For *</label>
+        <select name="Position" required>
+            <option value="">-- Select Position --</option>
+            <option>Legal Clerk</option>
+            <option>Paralegal</option>
+            <option>Security Officer</option>
+            <option>Risk Analyst</option>
+            <option>Surveillance Officer</option>
+            <option>Private Investigator</option>
+            <option>Admin / Legal Assistant</option>
+        </select>
+
+        <label>Highest Qualification *</label>
+        <select name="qaulification" required>
+            <option value="">-- Select --</option>
+            <option>Matric</option>
+            <option>Certificate</option>
+            <option>Diploma</option>
+            <option>Degree</option>
+            <option>Law Degree</option>
+            <option>Security / Policing Qualification</option>
+        </select>
+
+        <!-- Background -->
+        <label>Do you have any criminal record? *</label>
+        <select name="criminal_record" required>
+            <option value="">-- Select --</option>
+            <option>No</option>
+            <option>Yes (Explain below)</option>
+        </select>
+
+        <label>Previous Experience (briefly) *</label>
+        <textarea name="experience" required></textarea>
+
+        <label>Relevant Certifications / Licenses *</label>
+        <textarea name="certifications" placeholder="e.g., Law Society Certificate, Security License, Firearms License, First Aid Certificate" required></textarea>
+
+        <label>Professional References (Name, Title, Contact) *</label>
+        <textarea name="references" placeholder="Provide at least 2 professional references" required></textarea>
+
+        <label>Driving License (if applicable)</label>
+        <select name="driving_license">
+            <option value="">-- Select --</option>
+            <option>Code 08 (Heavy Vehicles)</option>
+            <option>Code 10 (Professional Driving)</option>
+            <option>Code 08 & 10</option>
+            <option>Standard License</option>
+            <option>None</option>
+        </select>
+
+        <label>Willing to undergo background checks and security clearance? *</label>
+        <select name="background_check" required>
+            <option value="">-- Select --</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <label>Security Clearance Level (if applicable)</label>
+        <select name="security_clearance">
+            <option value="">-- Select --</option>
+            <option>Top Secret</option>
+            <option>Secret</option>
+            <option>Confidential</option>
+            <option>Not Required</option>
+        </select>
+
+        <!-- File Upload -->
+        <label>Upload CV (PDF only) *</label>
+        <input type="file" name="cv" accept=".pdf" required>
+
+        <label>Upload Cover Letter (PDF/DOC) *</label>
+        <input type="file" name="cover_letter" accept=".pdf,.doc,.docx" required>
+
+        <!-- Declarations -->
+        <label>
+            <input type="checkbox" required>
+            I declare that the information provided is true and correct *
+        </label>
+        
+        <label>
+            <input type="checkbox" required>
+            I consent to background verification and security clearance screening *
+        </label>
+        
+        <label>
+            <input type="checkbox" required>
+            I understand that any false information may result in disqualification or termination *
+        </label>
+
+        <button type="submit">Submit Application</button>
+
+        <p class="note">
+            * All fields marked with an asterisk are required. All information will be treated as strictly confidential and used only for employment purposes in compliance with privacy legislation.
+        </p>
+
+    </form>
+</div>
+
+</body>
+</html>
